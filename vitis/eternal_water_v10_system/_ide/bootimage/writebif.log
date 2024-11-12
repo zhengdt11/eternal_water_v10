@@ -1,0 +1,9 @@
+TRACE::2024-11-10.13:26:56::SCWBifWriter::Found the complete platform C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+TRACE::2024-11-10.13:26:56::SCWBifWriter::hardware databse : system_wrapper
+TRACE::2024-11-10.13:26:56::SCWBifWriter::bitstream found in the design
+TRACE::2024-11-10.13:26:56::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2024-11-10.13:26:56::SCWBifWriter::proc type : 
+TRACE::2024-11-10.13:26:56::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2024-11-10.13:26:56::SCWBifWriter::Device type is : zynq
+TRACE::2024-11-10.13:26:56::SCWBifWriter::Writing BIF to file : C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vitis/eternal_water_v10_system/_ide/bootimage/template_eternal_water_v10_system.bif
+TRACE::2024-11-10.13:26:56::SCWBifWriter::Writing the Zynq Baremetal bif 

@@ -1,0 +1,40 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../eternal_water_v10.gen/sources_1/bd/system/ipshared/7fb4/hdl" --include "../../../../eternal_water_v10.gen/sources_1/bd/system/ipshared/c2c6" --include "../../../../eternal_water_v10.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../eternal_water_v10.gen/sources_1/bd/system/ipshared/6b2b/hdl" \
+"../../../bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_mmcm_pll_drp.v" \
+"../../../bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.v" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/ip/system_v_axi4s_vid_out_0_0/sim/system_v_axi4s_vid_out_0_0.v" \
+"../../../bd/system/ip/system_v_vid_in_axi4s_0_0/sim/system_v_vid_in_axi4s_0_0.v" \
+"../../../bd/system/ip/system_v_vid_in_axi4s_0_1/sim/system_v_vid_in_axi4s_0_1.v" \
+"../../../bd/system/ipshared/8797/src/ov5640_capture_data.v" \
+"../../../bd/system/ip/system_ov5640_capture_data_0_1/sim/system_ov5640_capture_data_0_1.v" \
+"../../../bd/system/ip/system_ov5640_capture_data_0_2/sim/system_ov5640_capture_data_0_2.v" \
+"../../../bd/system/ip/system_v_axi4s_vid_out_0_1/sim/system_v_axi4s_vid_out_0_1.v" \
+"../../../bd/system/ip/system_wtc_v2_0_0/src/linebuffer/sim/linebuffer.v" \
+"../../../bd/system/ipshared/60ee/src/lrc.v" \
+"../../../bd/system/ipshared/60ee/src/top.v" \
+"../../../bd/system/ipshared/60ee/src/sync.v" \
+"../../../bd/system/ipshared/60ee/src/aggr.v" \
+"../../../bd/system/ipshared/60ee/src/census_cost.v" \
+"../../../bd/system/ipshared/60ee/src/census_create.v" \
+"../../../bd/system/ipshared/60ee/src/rgb2gray.v" \
+"../../../bd/system/ip/system_wtc_v2_0_0/sim/system_wtc_v2_0_0.v" \
+"../../../bd/system/ip/system_xbar_10/sim/system_xbar_10.v" \
+"../../../bd/system/ip/system_xbar_11/sim/system_xbar_11.v" \
+"../../../bd/system/ipshared/f810/src/rgb2lcd.v" \
+"../../../bd/system/ip/system_rgb2lcd_0_2/sim/system_rgb2lcd_0_2.v" \
+"../../../bd/system/sim/system.v" \
+"../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+"../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
+"../../../bd/system/ipshared/ad6e/src/Boundary_extraction.v" \
+"../../../bd/system/ipshared/ad6e/src/binarization.v" \
+"../../../bd/system/ipshared/ad6e/src/drive.v" \
+"../../../bd/system/ipshared/ad6e/src/uart.v" \
+"../../../bd/system/ipshared/ad6e/src/uart_set_xy.v" \
+"../../../bd/system/ipshared/ad6e/src/top.v" \
+"../../../bd/system/ip/system_servo_drive_0_0/sim/system_servo_drive_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

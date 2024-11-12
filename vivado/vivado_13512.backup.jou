@@ -1,0 +1,248 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Nov 10 14:47:27 2024
+# Process ID: 13512
+# Current directory: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22040 C:\Users\30545\Desktop\eternalwater\eternal_water_v10\vivado\eternal_water_v10.xpr
+# Log file: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/vivado.log
+# Journal file: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado\vivado.jou
+# Running On: zhengdt, OS: Windows, CPU Frequency: 2495 MHz, CPU Physical cores: 32, Host memory: 16294 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.xpr
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1
+disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins wtc_v2_0/clk]
+connect_bd_net [get_bd_pins wtc_v2_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+startgroup
+set_property -dict [list \
+  CONFIG.AXI_DRP {false} \
+  CONFIG.CLKOUT1_JITTER {157.049} \
+  CONFIG.CLKOUT1_PHASE_ERROR {141.876} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.175} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {27.125} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {53.875} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {2} \
+  CONFIG.PHASE_DUTY_CONFIG {false} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M05_AXI]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_0/reset]
+ipx::edit_ip_in_project -upgrade true -name wtc_v2_v1_0_project -directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/wtc_v2_v1_0_project c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/stereo_v3/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/stereo_v3/src C:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/stereo_v3/src/lrc.v
+add_files -norecurse C:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/stereo_v3/src/lrc.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+open_run impl_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 62 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip
+report_ip_status -name ip_status 
+upgrade_ip -vlnv eternal_water:user:wtc_v2:1.0 [get_ips  system_wtc_v2_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips system_wtc_v2_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property location {7.5 2248 977} [get_bd_cells rgb2lcd_0]
+delete_bd_objs [get_bd_intf_nets wtc_v2_0_vid_out]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:video_image_process:1.0 video_image_process_0
+endgroup
+ipx::edit_ip_in_project -upgrade true -name video_image_process_v1_0_project -directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/video_image_process_v1_0_project c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/median/component.xml
+update_compile_order -fileset sources_1
+current_project eternal_water_v10
+connect_bd_net [get_bd_pins video_image_process_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins video_image_process_0/rst_n] [get_bd_pins clk_wiz_0/locked]
+current_project video_image_process_v1_0_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins video_image_process_0/clk]
+disconnect_bd_net /clk_wiz_0_locked [get_bd_pins video_image_process_0/rst_n]
+delete_bd_objs [get_bd_cells video_image_process_0]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv eternal_water:user:servo_drive:1.0 servo_drive_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins wtc_v2_0/vid_out] [get_bd_intf_pins servo_drive_0/vid_in]
+connect_bd_net [get_bd_pins servo_drive_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins servo_drive_0/s_rst_n] [get_bd_pins clk_wiz_0/locked]
+report_ip_status -name ip_status 
+create_bd_port -dir O xsteer
+connect_bd_net [get_bd_ports xsteer] [get_bd_pins servo_drive_0/x_steer]
+create_bd_port -dir O ysteer
+startgroup
+connect_bd_net [get_bd_ports ysteer] [get_bd_pins servo_drive_0/y_steer]
+endgroup
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+reset_run system_clk_wiz_0_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+ipx::edit_ip_in_project -upgrade true -name wtc_v2_v1_0_project -directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/wtc_v2_v1_0_project c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/stereo_v3/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::add_bus_interface vid_out_1 [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:vid_io_rtl:1.0 [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:vid_io:1.0 [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property display_name vid_out_1 [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property description vid_out_1 [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+ipx::add_port_map ACTIVE_VIDEO [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property physical_name data_out_valid1 [ipx::get_port_maps ACTIVE_VIDEO -of_objects [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]]
+ipx::add_port_map VSYNC [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property physical_name vsync_out1 [ipx::get_port_maps VSYNC -of_objects [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]]
+ipx::add_port_map DATA [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property physical_name data_out1 [ipx::get_port_maps DATA -of_objects [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]]
+ipx::add_port_map HSYNC [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]
+set_property physical_name hsync_out1 [ipx::get_port_maps HSYNC -of_objects [ipx::get_bus_interfaces vid_out_1 -of_objects [ipx::current_core]]]
+ipx::add_bus_interface vid_out_2 [ipx::current_core]
+set_property abstraction_type_vlnv xilinx.com:interface:vid_io_rtl:1.0 [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property bus_type_vlnv xilinx.com:interface:vid_io:1.0 [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property interface_mode master [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property display_name vid_out_2 [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property description vid_out_2 [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+ipx::add_port_map ACTIVE_VIDEO [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property physical_name data_out_valid2 [ipx::get_port_maps ACTIVE_VIDEO -of_objects [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]]
+ipx::add_port_map VSYNC [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property physical_name vsync_out2 [ipx::get_port_maps VSYNC -of_objects [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]]
+ipx::add_port_map DATA [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property physical_name data_out2 [ipx::get_port_maps DATA -of_objects [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]]
+ipx::add_port_map HSYNC [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]
+set_property physical_name hsync_out2 [ipx::get_port_maps HSYNC -of_objects [ipx::get_bus_interfaces vid_out_2 -of_objects [ipx::current_core]]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 63 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip
+report_ip_status -name ip_status 
+upgrade_ip -vlnv eternal_water:user:wtc_v2:1.0 [get_ips  system_wtc_v2_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips system_wtc_v2_0_0] -no_script -sync -force -quiet
+connect_bd_intf_net [get_bd_intf_pins wtc_v2_0/vid_out_1] [get_bd_intf_pins servo_drive_0/vid_in]
+connect_bd_intf_net [get_bd_intf_pins wtc_v2_0/vid_out_2] [get_bd_intf_pins rgb2lcd_0/vid_rgb]
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+set_property is_loc_fixed true [get_ports [list  reset_rtl_0]]
+set_property is_loc_fixed true [get_ports [list  reset_rtl_0]]
+set_property is_loc_fixed true [get_ports [list  reset_rtl_0]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset_rtl_0]]
+set_property is_loc_fixed true [get_ports [list  reset_rtl_0]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset_rtl_0]]
+set_property PULLTYPE NONE [get_ports [list reset_rtl_0]]
+set_property OFFCHIP_TERM NONE [get_ports [list reset_rtl_0]]
+set_property is_loc_fixed true [get_ports [list  reset_rtl_0]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list reset_rtl_0]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list xsteer]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list ysteer]]
+set_property is_loc_fixed true [get_ports [list  xsteer]]
+set_property package_pin "" [get_ports [list  xsteer]]
+place_ports xsteer A20
+place_ports xsteer L16
+set_property IOSTANDARD LVCMOS33 [get_ports [list xsteer]]
+place_ports ysteer L19
+place_ports ysteer L20
+set_property package_pin "" [get_ports [list  ysteer]]
+set_property package_pin "" [get_ports [list  ysteer]]
+place_ports ysteer L15
+place_ports ysteer L14
+place_ports ysteer U19
+reset_run synth_1
+set_property target_constrs_file C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd]
+refresh_design
+set_property package_pin "" [get_ports [list  reset_rtl_0]]
+place_ports reset_rtl_0 L14
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset_rtl_0]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+report_ip_status -name ip_status 
+write_hw_platform -fixed -include_bit -force -file C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vitis/system_wrapper.xsa
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+ipx::edit_ip_in_project -upgrade true -name rgb2lcd_v1_0_project -directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/rgb2lcd_v1_0_project c:/Users/30545/Desktop/ZYNQ_Vitis_7020/37_dual_ov5640_lcd/ip_repo/rgb2lcd/ip/component.xml
+update_compile_order -fileset sources_1
+close_project
+startgroup
+set_property CONFIG.USE_DYN_RECONFIG {true} [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.AXI_DRP {false} \
+  CONFIG.CLKOUT1_JITTER {165.726} \
+  CONFIG.CLKOUT1_PHASE_ERROR {98.575} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {33.3333} \
+  CONFIG.ENABLE_CLOCK_MONITOR {false} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {30.000} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {1} \
+  CONFIG.PHASE_DUTY_CONFIG {false} \
+  CONFIG.PRIMITIVE {MMCM} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {/reset_rtl_0 (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_0/reset]
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+delete_bd_objs [get_bd_ports reset_rtl_0]
+startgroup
+set_property CONFIG.USE_DYN_RECONFIG {true} [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/clk_wiz_0/s_axi_lite} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins clk_wiz_0/s_axi_lite]
+save_bd_design
+reset_run synth_1
+reset_run system_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32

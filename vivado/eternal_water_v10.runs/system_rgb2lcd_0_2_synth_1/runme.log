@@ -1,0 +1,305 @@
+
+*** Running vivado
+    with args -log system_rgb2lcd_0_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_rgb2lcd_0_2.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_rgb2lcd_0_2.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rgb2lcd_0_2
+Command: synth_design -top system_rgb2lcd_0_2 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 34568
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1454.930 ; gain = 439.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_rgb2lcd_0_2' [c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_rgb2lcd_0_2/synth/system_rgb2lcd_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rgb2lcd' [c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ipshared/f810/src/rgb2lcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2lcd' (0#1) [c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ipshared/f810/src/rgb2lcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_rgb2lcd_0_2' (0#1) [c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_rgb2lcd_0_2/synth/system_rgb2lcd_0_2.v:53]
+WARNING: [Synth 8-7129] Port lcd_id_i[2] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_id_i[1] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_id_i[0] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[22] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[21] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[20] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[19] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[18] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[17] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[16] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[14] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[13] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[12] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[11] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[10] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[9] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[8] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[6] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[5] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[4] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[3] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[2] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[1] in module rgb2lcd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[0] in module rgb2lcd is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.867 ; gain = 551.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.867 ; gain = 551.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1566.867 ; gain = 551.164
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1566.867 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1587.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1587.402 ; gain = 0.004
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design system_rgb2lcd_0_2 has port lcd_rst driven by constant 1
+INFO: [Synth 8-3917] design system_rgb2lcd_0_2 has port lcd_bl driven by constant 1
+WARNING: [Synth 8-7129] Port lcd_id_i[2] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_id_i[1] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_id_i[0] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[22] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[21] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[20] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[19] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[18] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[17] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[16] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[14] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[13] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[12] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[11] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[10] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[9] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[8] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[6] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[5] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[4] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[3] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[2] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[1] in module system_rgb2lcd_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb_i[0] in module system_rgb2lcd_0_2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_1' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_2' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_3' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_4' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_5' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_6' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_7' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_8' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_9' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_10' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_11' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_12' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_13' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_14' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_15' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_16' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_17' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_18' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_19' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_20' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_21' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_22' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_23' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_24' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_25' to logic
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_26' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    27|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.402 ; gain = 571.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 27 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1587.402 ; gain = 551.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1587.402 ; gain = 571.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1593.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1604.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 7342fe00
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 66 Warnings, 27 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.227 ; gain = 1004.652
+INFO: [Common 17-1381] The checkpoint 'C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/system_rgb2lcd_0_2_synth_1/system_rgb2lcd_0_2.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/system_rgb2lcd_0_2_synth_1/system_rgb2lcd_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_rgb2lcd_0_2_utilization_synth.rpt -pb system_rgb2lcd_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 07:29:28 2024...

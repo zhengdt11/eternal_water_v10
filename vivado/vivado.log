@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 12 10:16:27 2024
+# Process ID: 20804
+# Current directory: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12696 C:\Users\30545\Desktop\eternalwater\eternal_water_v10\vivado\eternal_water_v10.xpr
+# Log file: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/vivado.log
+# Journal file: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado\vivado.jou
+# Running On: zhengdt, OS: Windows, CPU Frequency: 2495 MHz, CPU Physical cores: 32, Host memory: 16294 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1722.707 ; gain = 415.199
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd}
+Reading block design file <C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:5.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_150M
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:5.0 - v_vid_in_axi4s_1
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_1
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_2
+Adding component instance block -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_0
+Adding component instance block -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_1
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_3
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_1
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_1
+Adding component instance block -- eternal_water:user:stereo_matching:3.1 - wtc_v2_0
+Adding component instance block -- eternal_water:user:servo_drive:1.0 - servo_drive_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- www.alientek.com:user:rgb2lcd:1.0 - rgb2lcd_0
+Successfully read diagram <system> from block design file <C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd>
+ipx::edit_ip_in_project -upgrade true -name stereo_matching_v3_1_project -directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/stereo_matching_v3_1_project c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip/stereo_v3/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/30545/desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/stereo_matching_v3_1_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1792.367 ; gain = 8.789
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'u_census_L/genblk2[0].lb'...
+[Tue Nov 12 10:19:01 2024] Launched synth_1...
+Run output will be captured here: c:/users/30545/desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/stereo_matching_v3_1_project/stereo_matching_v3_1_project.runs/synth_1/runme.log
+[Tue Nov 12 10:19:01 2024] Launched impl_1...
+Run output will be captured here: c:/users/30545/desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/stereo_matching_v3_1_project/stereo_matching_v3_1_project.runs/impl_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\rgb2gray.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\census_create.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\lrc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\sync.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\30545\Desktop\eternalwater\eternal_water_v10\ip\stereo_v3\src\aggr.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/30545/desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.tmp/stereo_matching_v3_1_project/stereo_matching_v3_1_project.runs'. The directory might be in use by some other process.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/30545/Desktop/eternalwater/eternal_water_v10/ip'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv eternal_water:user:stereo_matching:3.1 [get_ips  system_wtc_v2_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3422] Upgraded system_wtc_v2_0_0 (stereo_matching 3.1) from revision 5 to revision 6
+Wrote  : <C:\Users\30545\Desktop\eternalwater\eternal_water_v10\vivado\eternal_water_v10.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_wtc_v2_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd]
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\30545\Desktop\eternalwater\eternal_water_v10\vivado\eternal_water_v10.srcs\sources_1\bd\system\system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/sim/system.v
+Verilog Output written to : c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wtc_v2_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Hardware Definition File c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 2149.367 ; gain = 294.082
+catch { config_ip_cache -export [get_ips -all system_wtc_v2_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_wtc_v2_0_0
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b1c2e753b7017356 to dir: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/b/1/b1c2e753b7017356/system_auto_pc_0.dcp to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/b/1/b1c2e753b7017356/system_auto_pc_0_sim_netlist.v to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/b/1/b1c2e753b7017356/system_auto_pc_0_sim_netlist.vhdl to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/b/1/b1c2e753b7017356/system_auto_pc_0_stub.v to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/b/1/b1c2e753b7017356/system_auto_pc_0_stub.vhdl to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = b1c2e753b7017356; cache size = 796.741 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry fdeafe1a9b2439ce to dir: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/f/d/fdeafe1a9b2439ce/system_auto_pc_1.dcp to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/f/d/fdeafe1a9b2439ce/system_auto_pc_1_sim_netlist.v to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/f/d/fdeafe1a9b2439ce/system_auto_pc_1_sim_netlist.vhdl to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/f/d/fdeafe1a9b2439ce/system_auto_pc_1_stub.v to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/ip/2023.2/f/d/fdeafe1a9b2439ce/system_auto_pc_1_stub.vhdl to c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = fdeafe1a9b2439ce; cache size = 796.741 MB.
+export_ip_user_files -of_objects [get_files C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd]
+launch_runs system_wtc_v2_0_0_synth_1 -jobs 32
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_wtc_v2_0_0
+[Tue Nov 12 10:20:11 2024] Launched system_wtc_v2_0_0_synth_1...
+Run output will be captured here: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/system_wtc_v2_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd] -directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.ip_user_files -ipstatic_source_dir C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/compile_simlib/modelsim} {questa=C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/compile_simlib/questa} {riviera=C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/compile_simlib/riviera} {activehdl=C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_wtc_v2_0_0
+[Tue Nov 12 10:20:27 2024] Launched system_wtc_v2_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_wtc_v2_0_0_synth_1: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/system_wtc_v2_0_0_synth_1/runme.log
+synth_1: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/synth_1/runme.log
+[Tue Nov 12 10:20:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vitis/system_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vitis/system_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vitis/system_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2023.2/data/embeddedsw) loading 0 seconds
+delete_bd_objs [get_bd_intf_nets wtc_v2_0_vid_out]
+delete_bd_objs [get_bd_intf_nets wtc_v2_0_vid_out_2]
+delete_bd_objs [get_bd_nets servo_drive_0_x_steer] [get_bd_nets servo_drive_0_y_steer] [get_bd_cells servo_drive_0]
+delete_bd_objs [get_bd_ports ysteer]
+delete_bd_objs [get_bd_ports xsteer]
+startgroup
+create_bd_cell -type ip -vlnv eternal_water:user:disp2rgb:1.0 disp2rgb_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins wtc_v2_0/vid_out_1] [get_bd_intf_pins disp2rgb_0/vid_in]
+connect_bd_net [get_bd_pins disp2rgb_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins disp2rgb_0/rst_n] [get_bd_pins clk_wiz_0/locked]
+connect_bd_intf_net [get_bd_intf_pins disp2rgb_0/vid_out] [get_bd_intf_pins rgb2lcd_0/vid_rgb]
+generate_target all [get_files  C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/system.bd]
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\30545\Desktop\eternalwater\eternal_water_v10\vivado\eternal_water_v10.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/30545/Desktop/eternalwater/eternal_water_v10/vivado/eternal_water_v10.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 

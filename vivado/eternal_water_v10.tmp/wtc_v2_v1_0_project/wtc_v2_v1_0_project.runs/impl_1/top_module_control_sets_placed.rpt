@@ -1,0 +1,88 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Nov 11 01:52:23 2024
+| Host         : zhengdt running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             134 |           50 |
+| No           | No                    | Yes                    |           12429 |         2298 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            6520 |         2080 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------+---------------------+------------------+----------------+--------------+
+|  Clock Signal  |                Enable Signal               |   Set/Reset Signal  | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------------+---------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | data_in_valid_R_IBUF                       | u_hamming_R2L/rst_n |               16 |             43 |         2.69 |
+|  clk_IBUF_BUFG | data_in_valid_L_IBUF                       | u_hamming_R2L/rst_n |               16 |             43 |         2.69 |
+|  clk_IBUF_BUFG | u_rgb2gray_R/data_out_valid                | u_hamming_R2L/rst_n |               49 |            220 |         4.49 |
+|  clk_IBUF_BUFG | u_rgb2gray_L/data_out_valid                | u_hamming_R2L/rst_n |               35 |            220 |         6.29 |
+|  clk_IBUF_BUFG |                                            |                     |               50 |            268 |         5.36 |
+|  clk_IBUF_BUFG | u_hamming_L2R/data_out_valid_reg_0[0]      | u_hamming_R2L/rst_n |              463 |           1437 |         3.10 |
+|  clk_IBUF_BUFG | u_hamming_R2L/E[0]                         | u_hamming_R2L/rst_n |              454 |           1437 |         3.17 |
+|  clk_IBUF_BUFG | u_census_R/data_valid_pipeline_reg[2]_0[0] | u_hamming_R2L/rst_n |              524 |           1560 |         2.98 |
+|  clk_IBUF_BUFG | u_census_L/data_valid_pipeline_reg[2]_0[0] | u_hamming_R2L/rst_n |              523 |           1560 |         2.98 |
+|  clk_IBUF_BUFG |                                            | u_hamming_R2L/rst_n |             2298 |          12429 |         5.41 |
++----------------+--------------------------------------------+---------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,35 @@
+#ifndef GPIO_XY_H
+#define GPIO_XY_H
+
+#include "xgpio.h"
+#include "xil_printf.h"
+
+// GPIO设备ID和通道定义
+#define GPIO_DEVICE_ID    XPAR_AXI_GPIO_0_DEVICE_ID  // 替换为您的 GPIO 设备 ID
+#define X_CHANNEL         1                          // X 坐标的 GPIO 通道
+#define Y_CHANNEL         2                          // Y 坐标的 GPIO 通道
+
+// X 和 Y 坐标的最大值和最小值
+#define X_MIN 0
+#define X_MAX 1023
+#define Y_MIN 0
+#define Y_MAX 1023
+
+// 定义结构体来表示坐标
+typedef struct {
+    int x;
+    int y;
+} Coordinates;
+
+// GPIO 控制结构体
+typedef struct {
+    XGpio gpio;
+    Coordinates coords;
+} GPIO_Controller;
+
+// 函数声明
+int GPIO_XY_Init(GPIO_Controller *controller);           // 初始化 GPIO
+Coordinates GPIO_ReadCoordinates(GPIO_Controller *controller); // 读取坐标
+void GPIO_PrintCoordinates(Coordinates coords);               // 打印坐标
+
+#endif // GPIO_XY_H

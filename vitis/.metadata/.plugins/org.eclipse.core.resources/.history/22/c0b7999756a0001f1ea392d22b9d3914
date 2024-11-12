@@ -1,0 +1,44 @@
+#include "gpio_xy.h"
+
+// 初始化 GPIO 控制器
+int GPIO_XY_Init(GPIO_Controller *controller) {
+    int status;
+
+    // 初始化 GPIO 设备
+    status = XGpio_Initialize(&controller->gpio, GPIO_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("GPIO Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+
+    // 设置 X 和 Y 通道为输入
+    XGpio_SetDataDirection(&controller->gpio, X_CHANNEL, 0xFFFFFFFF); // 设置X通道为输入
+    XGpio_SetDataDirection(&controller->gpio, Y_CHANNEL, 0xFFFFFFFF); // 设置Y通道为输入
+
+    xil_printf("GPIO Initialized for X and Y coordinate input.\r\n");
+    return XST_SUCCESS;
+}
+
+// 读取 X 和 Y 坐标
+Coordinates GPIO_ReadCoordinates(GPIO_Controller *controller) {
+    Coordinates coords;
+
+    // 从 X 和 Y 通道读取数据
+    coords.x = XGpio_DiscreteRead(&controller->gpio, X_CHANNEL);
+    coords.y = XGpio_DiscreteRead(&controller->gpio, Y_CHANNEL);
+
+    // 数据范围检查，确保坐标在预定义范围内
+    if (coords.x < X_MIN || coords.x > X_MAX) {
+        xil_printf("Warning: X coordinate out of range\r\n");
+    }
+    if (coords.y < Y_MIN || coords.y > Y_MAX) {
+        xil_printf("Warning: Y coordinate out of range\r\n");
+    }
+
+    return coords;
+}
+
+// 打印 X 和 Y 坐标
+void GPIO_PrintCoordinates(Coordinates coords) {
+    xil_printf("Coordinates - X: %d, Y: %d\r\n", coords.x, coords.y);
+}
